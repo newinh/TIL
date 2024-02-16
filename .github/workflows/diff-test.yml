@@ -17,5 +17,5 @@ jobs:
         run: |
           git checkout prod
           git rebase main
-          git push prod
+          git push origin prod
     
