@@ -13,13 +13,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Configure git
+      - name: Renew `prod` branch
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-
-      - name: Merge branch
-        run: |
           git checkout prod
           git rebase main
           git push origin prod
