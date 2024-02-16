@@ -1,0 +1,19 @@
+name: 🚀 Diff test
+run-name: 🚀 Diff test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  record-diff:
+    runs-on: ubuntu-latest
+    name: Record diff
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Merge branch
+        run: |
+          git checkout prod
+          git rebase main
+          git push prod
+    
