@@ -34,10 +34,10 @@
 • 샤딩은 첫 선택이 아닙니다.
 
 🧩 다이어그램
-https://raw.githubusercontent.com/newinh/TIL/main/diagrams/day-01-scaling.png
+https://raw.githubusercontent.com/newinh/TIL/orca/sys-design/diagrams/day-01-scaling.png
 
 📖 전체 강의
-https://github.com/newinh/TIL/blob/main/lessons/day-01-scaling.md
+https://github.com/newinh/TIL/blob/orca/sys-design/lessons/day-01-scaling.md
 
 📚 원문
 https://github.com/liquidslr/system-design-notes/tree/main/01.%20Scaling
