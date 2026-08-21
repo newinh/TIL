@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>규모가 커질수록 병목을 분리한다</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:#f5f5f5;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+    svg{width:1200px;height:632px;display:block}
+    .sans{font-family:'Geist','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif}
+    .mono{font-family:'Geist Mono','Noto Sans Mono CJK KR',monospace}
+    .serif{font-family:'Instrument Serif','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',serif}
+    .node-title{fill:#2d3142;font-size:16px;font-weight:600}
+    .node-sub{fill:#4f5d75;font-size:12px}
+    .tag{font-size:8px;font-weight:600;letter-spacing:.12em}
+    .arrow-label{font-size:12px;letter-spacing:.04em}
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1200 632" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="day-01-scaling-title day-01-scaling-desc">
+    <title id="day-01-scaling-title">규모가 커질수록 병목을 분리한다</title>
+    <desc id="day-01-scaling-desc">사용자 요청이 CDN, 로드밸런서, 무상태 애플리케이션을 지나 캐시와 주 데이터베이스, 읽기 복제본으로 나뉘는 확장 아키텍처.</desc>
+    <defs>
+      <marker id="day01-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+      <marker id="day01-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+      <marker id="day01-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+    </defs>
+
+    <rect width="1200" height="632" fill="#f5f5f5"/>
+    <text x="64" y="44" class="mono" fill="#4f5d75" font-size="8" font-weight="500" letter-spacing=".18em">SYSTEM DESIGN DAILY · DAY 01</text>
+    <text x="64" y="88" class="serif" fill="#2d3142" font-size="40">규모가 커질수록, 병목을 분리한다</text>
+    <text x="64" y="116" class="sans" fill="#4f5d75" font-size="16">한 번에 완성하는 구조가 아니라, 측정된 병목을 하나씩 떼어내는 구조</text>
+
+    <!-- Data tier zone -->
+    <rect x="832" y="144" width="304" height="360" rx="8" fill="rgba(45,49,66,.02)" stroke="rgba(45,49,66,.12)" stroke-width="0.8"/>
+    <rect x="940" y="148" width="88" height="16" rx="2" fill="#f5f5f5"/>
+    <text x="984" y="160" class="mono" fill="#7a8399" font-size="8" text-anchor="middle" letter-spacing=".14em">DATA TIER</text>
+
+    <!-- Connectors: drawn before nodes -->
+    <line x1="208" y1="320" x2="256" y2="320" stroke="#2e5aa8" stroke-width="1.2" marker-end="url(#day01-arrow-link)"/>
+    <line x1="400" y1="320" x2="448" y2="320" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#day01-arrow)"/>
+    <line x1="592" y1="320" x2="640" y2="320" stroke="#eb6c36" stroke-width="1.4" marker-end="url(#day01-arrow-accent)"/>
+    <line x1="800" y1="320" x2="912" y2="320" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#day01-arrow)"/>
+    <path d="M700 280 V224 Q700 216 708 216 H912" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#day01-arrow)"/>
+    <path d="M740 360 V416 Q740 424 748 424 H912" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#day01-arrow)"/>
+    <line x1="992" y1="360" x2="992" y2="384" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#day01-arrow)"/>
+
+    <!-- Connector labels, with visible gap -->
+    <rect x="208" y="292" width="48" height="16" rx="2" fill="#f5f5f5"/><text x="232" y="304" class="mono arrow-label" fill="#2e5aa8" text-anchor="middle">HTTP</text>
+    <rect x="592" y="292" width="48" height="16" rx="2" fill="#f5f5f5"/><text x="616" y="304" class="mono arrow-label" fill="#eb6c36" text-anchor="middle">ROUTE</text>
+    <rect x="808" y="188" width="96" height="16" rx="2" fill="#f5f5f5"/><text x="856" y="200" class="mono arrow-label" fill="#4f5d75" text-anchor="middle">CACHE FIRST</text>
+    <rect x="820" y="396" width="80" height="16" rx="2" fill="#f5f5f5"/><text x="860" y="408" class="mono arrow-label" fill="#4f5d75" text-anchor="middle">READ</text>
+
+    <!-- Nodes -->
+    <g class="sans" text-anchor="middle">
+      <g><rect x="64" y="280" width="144" height="80" rx="6" fill="rgba(79,93,117,.10)" stroke="#7a8399"/><rect x="72" y="288" width="32" height="16" rx="2" fill="transparent" stroke="rgba(122,131,153,.5)"/><text x="88" y="300" class="mono tag" fill="#7a8399">USER</text><text x="136" y="328" class="node-title">사용자</text><text x="136" y="348" class="mono node-sub">web · mobile</text></g>
+      <g><rect x="256" y="280" width="144" height="80" rx="6" fill="rgba(45,49,66,.03)" stroke="rgba(45,49,66,.3)"/><rect x="264" y="288" width="32" height="16" rx="2" fill="transparent" stroke="rgba(45,49,66,.3)"/><text x="280" y="300" class="mono tag" fill="#7a8399">EDGE</text><text x="328" y="328" class="node-title">CDN</text><text x="328" y="348" class="mono node-sub">static content</text></g>
+      <g><rect x="448" y="280" width="144" height="80" rx="6" fill="#fff" stroke="#2d3142"/><rect x="456" y="288" width="32" height="16" rx="2" fill="transparent" stroke="rgba(45,49,66,.4)"/><text x="472" y="300" class="mono tag" fill="#2d3142">EDGE</text><text x="520" y="328" class="node-title">로드밸런서</text><text x="520" y="348" class="mono node-sub">health · routing</text></g>
+      <g><rect x="640" y="280" width="160" height="80" rx="6" fill="rgba(235,108,54,.08)" stroke="#eb6c36" stroke-width="1.2"/><rect x="648" y="288" width="32" height="16" rx="2" fill="transparent" stroke="rgba(235,108,54,.55)"/><text x="664" y="300" class="mono tag" fill="#eb6c36">APP</text><text x="720" y="328" class="node-title">무상태 앱 ×N</text><text x="720" y="348" class="mono node-sub">horizontal scale</text></g>
+      <g><rect x="912" y="176" width="160" height="80" rx="6" fill="rgba(45,49,66,.05)" stroke="#4f5d75"/><rect x="920" y="184" width="40" height="16" rx="2" fill="transparent" stroke="rgba(79,93,117,.5)"/><text x="940" y="196" class="mono tag" fill="#4f5d75">CACHE</text><text x="992" y="224" class="node-title">캐시</text><text x="992" y="244" class="mono node-sub">hot reads</text></g>
+      <g><rect x="912" y="280" width="160" height="80" rx="6" fill="rgba(45,49,66,.05)" stroke="#4f5d75"/><rect x="920" y="288" width="32" height="16" rx="2" fill="transparent" stroke="rgba(79,93,117,.5)"/><text x="936" y="300" class="mono tag" fill="#4f5d75">DB</text><text x="992" y="328" class="node-title">주 DB</text><text x="992" y="348" class="mono node-sub">writes</text></g>
+      <g><rect x="912" y="384" width="160" height="80" rx="6" fill="rgba(45,49,66,.05)" stroke="#4f5d75"/><rect x="920" y="392" width="32" height="16" rx="2" fill="transparent" stroke="rgba(79,93,117,.5)"/><text x="936" y="404" class="mono tag" fill="#4f5d75">DB</text><text x="992" y="432" class="node-title">읽기 복제본</text><text x="992" y="452" class="mono node-sub">read scale</text></g>
+    </g>
+
+    <!-- Legend -->
+    <line x1="64" y1="536" x2="1136" y2="536" stroke="rgba(45,49,66,.12)" stroke-width="0.8"/>
+    <text x="64" y="560" class="mono" fill="#4f5d75" font-size="8" letter-spacing=".18em">READ THE FLOW</text>
+    <text x="64" y="592" class="sans" fill="#2d3142" font-size="16">앞단은 반복 요청을 줄이고</text>
+    <text x="352" y="592" class="sans" fill="#eb6c36" font-size="16">앱은 복제 가능하게 만들고</text>
+    <text x="704" y="592" class="sans" fill="#2d3142" font-size="16">데이터 계층은 읽기와 쓰기를 나눈다</text>
+  </svg>
+</body>
+</html>
