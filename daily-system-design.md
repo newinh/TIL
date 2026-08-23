@@ -28,18 +28,18 @@
 | 18 | Nearby Friends ② | Redis Pub/Sub이 커질 때 어디서 막힐까? |
 | 19 | Google Maps ① | 지도 타일과 위치 검색을 어떻게 제공할까? |
 | 20 | Google Maps ② | 경로 탐색과 실시간 교통 정보를 어떻게 합칠까? |
-| 21 | Distributed Queue ① | 토픽·파티션·Consumer Group은 왜 필요한가? |
+| 21 | Distributed Queue ① | 토픽, 파티션, Consumer Group은 왜 필요한가? |
 | 22 | Distributed Queue ② | 재처리와 순서, 전달 보장을 어디까지 약속할까? |
 | 23 | Monitoring ① | 수많은 시계열 지표를 어떻게 수집할까? |
-| 24 | Monitoring ② | 저장·조회·알림을 어떻게 확장할까? |
+| 24 | Monitoring ② | 저장, 조회, 알림을 어떻게 확장할까? |
 | 25 | Ad Click Aggregation ① | 실시간 집계에서 시간 창을 어떻게 정의할까? |
 | 26 | Ad Click Aggregation ② | 중복과 지연 이벤트 속에서 결과를 어떻게 믿을까? |
 | 27 | Hotel Reservation ① | 객실과 재고를 어떤 데이터 모델로 표현할까? |
 | 28 | Hotel Reservation ② | 마지막 한 방을 두 사람이 동시에 예약하면? |
-| 29 | Distributed Email ① | 메일 전송·수신·저장을 어떻게 분리할까? |
+| 29 | Distributed Email ① | 메일 전송, 수신, 저장을 어떻게 분리할까? |
 | 30 | Distributed Email ② | 전달률, 검색, 스팸 대응을 어떻게 확장할까? |
 | 31 | S3-like Storage ① | 객체 데이터와 메타데이터를 왜 나눠야 할까? |
-| 32 | S3-like Storage ② | 멀티파트 업로드·버전·GC를 어떻게 설계할까? |
+| 32 | S3-like Storage ② | 멀티파트 업로드, 버전, GC를 어떻게 설계할까? |
 | 33 | Gaming Leaderboard ① | 실시간 순위를 어떤 자료구조로 구할까? |
 | 34 | Gaming Leaderboard ② | Redis를 언제, 어떤 키로 샤딩할까? |
 | 35 | Payment System ① | 결제 흐름과 원장을 어떻게 분리할까? |
@@ -47,7 +47,7 @@
 | 37 | Digital Wallet ① | 여러 지갑의 잔액을 원자적으로 옮길 수 있을까? |
 | 38 | Digital Wallet ② | Event Sourcing으로 잔액을 다시 계산할 수 있을까? |
 | 39 | Stock Exchange ① | 주문 접수와 Matching Engine을 어떻게 분리할까? |
-| 40 | Stock Exchange ② | 결정성·공정성·고가용성을 동시에 지킬 수 있을까? |
+| 40 | Stock Exchange ② | 결정성, 공정성, 고가용성을 동시에 지킬 수 있을까? |
 
 ---
 
@@ -134,9 +134,9 @@
 
 ## Day 03. 설계보다 먼저 합의하라
 
-![시스템 설계 인터뷰의 네 단계와 각 단계의 질문·산출물·함정](diagrams/day-03-framework.png)
+![시스템 설계 인터뷰의 네 단계와 각 단계의 질문, 산출물, 함정](diagrams/day-03-framework.png)
 
-“뉴스 피드를 설계해보세요.” 이 말을 듣자마자 Kafka와 Cassandra를 그리기 시작하면 대개 꼬인다. 어떤 피드인지 아직 모르기 때문이다. 친구 글만 나오는가? 추천 글도 섞이는가? 사진과 영상이 있는가? 최신순인가, 랭킹순인가? 질문에 따라 데이터 모델과 읽기·쓰기 전략이 전부 달라진다.
+“뉴스 피드를 설계해보세요.” 이 말을 듣자마자 Kafka와 Cassandra를 그리기 시작하면 대개 꼬인다. 어떤 피드인지 아직 모르기 때문이다. 친구 글만 나오는가? 추천 글도 섞이는가? 사진과 영상이 있는가? 최신순인가, 랭킹순인가? 질문에 따라 읽기 전략과 쓰기 전략, 데이터 모델이 전부 달라진다.
 
 시스템 설계는 네 단계로 진행하면 안정적이다.
 
