@@ -1,0 +1,407 @@
+{
+  "course": "System Design Daily",
+  "timezone": "Asia/Seoul",
+  "time": "09:30",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-08-25",
+      "slug": "scaling",
+      "title": "확장은 서버를 늘리는 일이 아니다",
+      "slack": "slack/day-01-scaling.md",
+      "lesson": "lessons/day-01-scaling.md",
+      "diagram": "diagrams/day-01-scaling.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/01.%20Scaling"
+    },
+    {
+      "day": 2,
+      "date": "2026-08-29",
+      "slug": "estimation",
+      "title": "숫자는 정답이 아니라 설계의 방향이다",
+      "slack": "slack/day-02-estimation.md",
+      "lesson": "lessons/day-02-estimation.md",
+      "diagram": "diagrams/day-02-estimation.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/02.%20Back%20Of%20the%20Envelope%20Estimation"
+    },
+    {
+      "day": 3,
+      "date": "2026-08-30",
+      "slug": "framework",
+      "title": "설계보다 먼저 합의하라",
+      "slack": "slack/day-03-framework.md",
+      "lesson": "lessons/day-03-framework.md",
+      "diagram": "diagrams/day-03-framework.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/03.%20System%20Design%20Framework"
+    },
+    {
+      "day": 4,
+      "date": "2026-08-31",
+      "slug": "rate-limiter",
+      "title": "제한은 차단이 아니라 공정한 용량 배분이다",
+      "slack": "slack/day-04-rate-limiter.md",
+      "lesson": "lessons/day-04-rate-limiter.md",
+      "diagram": "diagrams/day-04-rate-limiter.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/04.%20Rate%20Limiter"
+    },
+    {
+      "day": 5,
+      "date": "2026-09-01",
+      "slug": "consistent-hashing",
+      "title": "서버가 바뀌어도 모든 키를 옮기지 않는다",
+      "slack": "slack/day-05-consistent-hashing.md",
+      "lesson": "lessons/day-05-consistent-hashing.md",
+      "diagram": "diagrams/day-05-consistent-hashing.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/05.%20Consistent%20Hashing"
+    },
+    {
+      "day": 6,
+      "date": "2026-09-02",
+      "slug": "key-value-store",
+      "title": "복제본 수보다 읽기와 쓰기의 약속이 중요하다",
+      "slack": "slack/day-06-key-value-store.md",
+      "lesson": "lessons/day-06-key-value-store.md",
+      "diagram": "diagrams/day-06-key-value-store.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/06.%20Key-Value%20Store"
+    },
+    {
+      "day": 7,
+      "date": "2026-09-03",
+      "slug": "unique-id",
+      "title": "ID 한 개에도 시간과 위치를 담는다",
+      "slack": "slack/day-07-unique-id.md",
+      "lesson": "lessons/day-07-unique-id.md",
+      "diagram": "diagrams/day-07-unique-id.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/07.%20Unique-Id%20Generator"
+    },
+    {
+      "day": 8,
+      "date": "2026-09-04",
+      "slug": "url-shortener",
+      "title": "짧은 주소의 핵심은 문자열이 아니라 매핑이다",
+      "slack": "slack/day-08-url-shortener.md",
+      "lesson": "lessons/day-08-url-shortener.md",
+      "diagram": "diagrams/day-08-url-shortener.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/08.%20URL%20Shortener"
+    },
+    {
+      "day": 9,
+      "date": "2026-09-05",
+      "slug": "web-crawler",
+      "title": "빨리 수집하기보다 예의 바르게 다시 찾기가 어렵다",
+      "slack": "slack/day-09-web-crawler.md",
+      "lesson": "lessons/day-09-web-crawler.md",
+      "diagram": "diagrams/day-09-web-crawler.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/09.%20Web%20Crawler"
+    },
+    {
+      "day": 10,
+      "date": "2026-09-06",
+      "slug": "notification-system",
+      "title": "발송 요청과 실제 전송을 분리하라",
+      "slack": "slack/day-10-notification-system.md",
+      "lesson": "lessons/day-10-notification-system.md",
+      "diagram": "diagrams/day-10-notification-system.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/10.%20Notification%20System"
+    },
+    {
+      "day": 11,
+      "date": "2026-09-07",
+      "slug": "news-feed",
+      "title": "뉴스 피드는 누구에게 언제 펼칠 것인가",
+      "slack": "slack/day-11-news-feed.md",
+      "lesson": "lessons/day-11-news-feed.md",
+      "diagram": "diagrams/day-11-news-feed.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/11.%20News%20Feed%20System"
+    },
+    {
+      "day": 12,
+      "date": "2026-09-08",
+      "slug": "chat-system",
+      "title": "실시간 채팅은 연결보다 순서가 어렵다",
+      "slack": "slack/day-12-chat-system.md",
+      "lesson": "lessons/day-12-chat-system.md",
+      "diagram": "diagrams/day-12-chat-system.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/12.%20Chat%20System"
+    },
+    {
+      "day": 13,
+      "date": "2026-09-09",
+      "slug": "search-autocomplete",
+      "title": "자동완성은 검색이 아니라 미리 계산한 순위다",
+      "slack": "slack/day-13-search-autocomplete.md",
+      "lesson": "lessons/day-13-search-autocomplete.md",
+      "diagram": "diagrams/day-13-search-autocomplete.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/13.%20Search%20Autocomplete"
+    },
+    {
+      "day": 14,
+      "date": "2026-09-10",
+      "slug": "youtube",
+      "title": "동영상 서비스는 업로드 뒤부터 시작된다",
+      "slack": "slack/day-14-youtube.md",
+      "lesson": "lessons/day-14-youtube.md",
+      "diagram": "diagrams/day-14-youtube.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/14.%20Youtube"
+    },
+    {
+      "day": 15,
+      "date": "2026-09-11",
+      "slug": "google-drive",
+      "title": "파일 동기화는 바이트보다 버전을 맞춘다",
+      "slack": "slack/day-15-google-drive.md",
+      "lesson": "lessons/day-15-google-drive.md",
+      "diagram": "diagrams/day-15-google-drive.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/15.%20Google%20Drive"
+    },
+    {
+      "day": 16,
+      "date": "2026-09-12",
+      "slug": "proximity-service",
+      "title": "주변 검색은 좌표를 셀로 바꾸는 문제다",
+      "slack": "slack/day-16-proximity-service.md",
+      "lesson": "lessons/day-16-proximity-service.md",
+      "diagram": "diagrams/day-16-proximity-service.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/16.%20Proximity%20Service"
+    },
+    {
+      "day": 17,
+      "date": "2026-09-13",
+      "slug": "nearby-friends-foundation",
+      "title": "친구 위치는 최신값만 빠르게 흘려보낸다",
+      "slack": "slack/day-17-nearby-friends-foundation.md",
+      "lesson": "lessons/day-17-nearby-friends-foundation.md",
+      "diagram": "diagrams/day-17-nearby-friends-foundation.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/17.%20Nearby%20Friends"
+    },
+    {
+      "day": 18,
+      "date": "2026-09-14",
+      "slug": "nearby-friends-scaling",
+      "title": "실시간 위치 확장은 구독 이동 비용과 싸운다",
+      "slack": "slack/day-18-nearby-friends-scaling.md",
+      "lesson": "lessons/day-18-nearby-friends-scaling.md",
+      "diagram": "diagrams/day-18-nearby-friends-scaling.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/17.%20Nearby%20Friends"
+    },
+    {
+      "day": 19,
+      "date": "2026-09-15",
+      "slug": "google-maps-tiles",
+      "title": "지도는 거대한 한 장이 아니라 타일 묶음이다",
+      "slack": "slack/day-19-google-maps-tiles.md",
+      "lesson": "lessons/day-19-google-maps-tiles.md",
+      "diagram": "diagrams/day-19-google-maps-tiles.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/18.%20Google%20Maps"
+    },
+    {
+      "day": 20,
+      "date": "2026-09-16",
+      "slug": "google-maps-routing",
+      "title": "길찾기는 세계 전체가 아닌 필요한 그래프만 읽는다",
+      "slack": "slack/day-20-google-maps-routing.md",
+      "lesson": "lessons/day-20-google-maps-routing.md",
+      "diagram": "diagrams/day-20-google-maps-routing.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/18.%20Google%20Maps"
+    },
+    {
+      "day": 21,
+      "date": "2026-09-17",
+      "slug": "distributed-queue-foundation",
+      "title": "파티션이 병렬성과 순서를 결정한다",
+      "slack": "slack/day-21-distributed-queue-foundation.md",
+      "lesson": "lessons/day-21-distributed-queue-foundation.md",
+      "diagram": "diagrams/day-21-distributed-queue-foundation.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/19.%20Distributed%20Message%20Queue"
+    },
+    {
+      "day": 22,
+      "date": "2026-09-18",
+      "slug": "distributed-queue-delivery",
+      "title": "재처리는 오프셋과 멱등성의 문제다",
+      "slack": "slack/day-22-distributed-queue-delivery.md",
+      "lesson": "lessons/day-22-distributed-queue-delivery.md",
+      "diagram": "diagrams/day-22-distributed-queue-delivery.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/19.%20Distributed%20Message%20Queue"
+    },
+    {
+      "day": 23,
+      "date": "2026-09-19",
+      "slug": "monitoring-collection",
+      "title": "지표 수집은 관측 대상을 잃지 않는 일이다",
+      "slack": "slack/day-23-monitoring-collection.md",
+      "lesson": "lessons/day-23-monitoring-collection.md",
+      "diagram": "diagrams/day-23-monitoring-collection.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/20.%20Metrics%20Monitoring%20and%20Alerting%20System"
+    },
+    {
+      "day": 24,
+      "date": "2026-09-20",
+      "slug": "monitoring-storage-alerting",
+      "title": "오래된 지표는 낮은 해상도로, 알림은 상태로 관리한다",
+      "slack": "slack/day-24-monitoring-storage-alerting.md",
+      "lesson": "lessons/day-24-monitoring-storage-alerting.md",
+      "diagram": "diagrams/day-24-monitoring-storage-alerting.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/20.%20Metrics%20Monitoring%20and%20Alerting%20System"
+    },
+    {
+      "day": 25,
+      "date": "2026-09-21",
+      "slug": "ad-click-windows",
+      "title": "시간 창은 질문의 모양을 결정한다",
+      "slack": "slack/day-25-ad-click-windows.md",
+      "lesson": "lessons/day-25-ad-click-windows.md",
+      "diagram": "diagrams/day-25-ad-click-windows.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/21.%20Ad%20Click%20Event%20Aggregation"
+    },
+    {
+      "day": 26,
+      "date": "2026-09-22",
+      "slug": "ad-click-correctness",
+      "title": "정확한 집계는 늦고 중복된 이벤트를 다루는 일이다",
+      "slack": "slack/day-26-ad-click-correctness.md",
+      "lesson": "lessons/day-26-ad-click-correctness.md",
+      "diagram": "diagrams/day-26-ad-click-correctness.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/21.%20Ad%20Click%20Event%20Aggregation"
+    },
+    {
+      "day": 27,
+      "date": "2026-09-23",
+      "slug": "hotel-reservation-model",
+      "title": "호텔은 객실 번호가 아니라 날짜별 객실 유형 재고를 판다",
+      "slack": "slack/day-27-hotel-reservation-model.md",
+      "lesson": "lessons/day-27-hotel-reservation-model.md",
+      "diagram": "diagrams/day-27-hotel-reservation-model.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/22.%20Hotel%20Reservation%20System"
+    },
+    {
+      "day": 28,
+      "date": "2026-09-24",
+      "slug": "hotel-reservation-concurrency",
+      "title": "마지막 한 방은 동시성 제어가 막는다",
+      "slack": "slack/day-28-hotel-reservation-concurrency.md",
+      "lesson": "lessons/day-28-hotel-reservation-concurrency.md",
+      "diagram": "diagrams/day-28-hotel-reservation-concurrency.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/22.%20Hotel%20Reservation%20System"
+    },
+    {
+      "day": 29,
+      "date": "2026-09-25",
+      "slug": "distributed-email-flow",
+      "title": "이메일은 전송, 수신, 저장을 분리해야 버틴다",
+      "slack": "slack/day-29-distributed-email-flow.md",
+      "lesson": "lessons/day-29-distributed-email-flow.md",
+      "diagram": "diagrams/day-29-distributed-email-flow.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/23.%20Distributed%20Email%20Service"
+    },
+    {
+      "day": 30,
+      "date": "2026-09-26",
+      "slug": "distributed-email-deliverability",
+      "title": "받은편지함 도착은 전송 성공보다 어렵다",
+      "slack": "slack/day-30-distributed-email-deliverability.md",
+      "lesson": "lessons/day-30-distributed-email-deliverability.md",
+      "diagram": "diagrams/day-30-distributed-email-deliverability.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/23.%20Distributed%20Email%20Service"
+    },
+    {
+      "day": 31,
+      "date": "2026-09-27",
+      "slug": "object-storage-foundation",
+      "title": "객체 저장소는 데이터와 주소록을 분리한다",
+      "slack": "slack/day-31-object-storage-foundation.md",
+      "lesson": "lessons/day-31-object-storage-foundation.md",
+      "diagram": "diagrams/day-31-object-storage-foundation.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/24.%20S3-like%20Object%20Storage"
+    },
+    {
+      "day": 32,
+      "date": "2026-09-28",
+      "slug": "object-storage-lifecycle",
+      "title": "큰 객체와 삭제는 수명 주기로 관리한다",
+      "slack": "slack/day-32-object-storage-lifecycle.md",
+      "lesson": "lessons/day-32-object-storage-lifecycle.md",
+      "diagram": "diagrams/day-32-object-storage-lifecycle.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/24.%20S3-like%20Object%20Storage"
+    },
+    {
+      "day": 33,
+      "date": "2026-09-29",
+      "slug": "leaderboard-sorted-set",
+      "title": "실시간 순위표는 정렬 비용을 쓰기 때 지불한다",
+      "slack": "slack/day-33-leaderboard-sorted-set.md",
+      "lesson": "lessons/day-33-leaderboard-sorted-set.md",
+      "diagram": "diagrams/day-33-leaderboard-sorted-set.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/25.%20Real-time%20Gaming%20Leaderboard"
+    },
+    {
+      "day": 34,
+      "date": "2026-09-30",
+      "slug": "leaderboard-sharding",
+      "title": "순위표 샤딩은 쓰기 확장과 전체 순위를 맞바꾼다",
+      "slack": "slack/day-34-leaderboard-sharding.md",
+      "lesson": "lessons/day-34-leaderboard-sharding.md",
+      "diagram": "diagrams/day-34-leaderboard-sharding.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/25.%20Real-time%20Gaming%20Leaderboard"
+    },
+    {
+      "day": 35,
+      "date": "2026-10-01",
+      "slug": "payment-flow-ledger",
+      "title": "결제의 진실은 상태가 아니라 원장에 남는다",
+      "slack": "slack/day-35-payment-flow-ledger.md",
+      "lesson": "lessons/day-35-payment-flow-ledger.md",
+      "diagram": "diagrams/day-35-payment-flow-ledger.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/26.%20Payment%20System"
+    },
+    {
+      "day": 36,
+      "date": "2026-10-02",
+      "slug": "payment-idempotency",
+      "title": "결제 재시도는 같은 결과로 끝나야 한다",
+      "slack": "slack/day-36-payment-idempotency.md",
+      "lesson": "lessons/day-36-payment-idempotency.md",
+      "diagram": "diagrams/day-36-payment-idempotency.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/26.%20Payment%20System"
+    },
+    {
+      "day": 37,
+      "date": "2026-10-03",
+      "slug": "wallet-transactions",
+      "title": "지갑 이체는 차감과 입금을 하나의 상태 머신으로 묶는다",
+      "slack": "slack/day-37-wallet-transactions.md",
+      "lesson": "lessons/day-37-wallet-transactions.md",
+      "diagram": "diagrams/day-37-wallet-transactions.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/27.%20%20Digital%20Wallet"
+    },
+    {
+      "day": 38,
+      "date": "2026-10-04",
+      "slug": "wallet-event-sourcing",
+      "title": "지갑 잔액은 이벤트에서 다시 만들 수 있어야 한다",
+      "slack": "slack/day-38-wallet-event-sourcing.md",
+      "lesson": "lessons/day-38-wallet-event-sourcing.md",
+      "diagram": "diagrams/day-38-wallet-event-sourcing.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/27.%20%20Digital%20Wallet"
+    },
+    {
+      "day": 39,
+      "date": "2026-10-05",
+      "slug": "stock-exchange-orders",
+      "title": "거래소는 주문을 검증한 뒤 한 줄로 세운다",
+      "slack": "slack/day-39-stock-exchange-orders.md",
+      "lesson": "lessons/day-39-stock-exchange-orders.md",
+      "diagram": "diagrams/day-39-stock-exchange-orders.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/28.%20Stock%20Exchange"
+    },
+    {
+      "day": 40,
+      "date": "2026-10-06",
+      "slug": "stock-exchange-determinism",
+      "title": "거래소의 공정성과 복구는 같은 순서에서 나온다",
+      "slack": "slack/day-40-stock-exchange-determinism.md",
+      "lesson": "lessons/day-40-stock-exchange-determinism.md",
+      "diagram": "diagrams/day-40-stock-exchange-determinism.png",
+      "source": "https://github.com/liquidslr/system-design-notes/tree/main/28.%20Stock%20Exchange"
+    }
+  ]
+}

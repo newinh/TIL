@@ -36,4 +36,4 @@
 - 그래도 읽기 부하가 크면 읽기 복제본을 검토한다.
 - 샤딩은 이 단계의 첫 선택이 아니다.
 
-원문: [Chapter 1 — Scale from Zero to Millions of Users](https://github.com/liquidslr/system-design-notes/tree/main/01.%20Scaling)
+원문: [Chapter 1, Scale from Zero to Millions of Users](https://github.com/liquidslr/system-design-notes/tree/main/01.%20Scaling)

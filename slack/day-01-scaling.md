@@ -14,12 +14,12 @@
 
 ### 확장 순서
 
-1. DB 분리 — 앱과 데이터 계층을 따로 키웁니다.
-2. 무상태 앱 — 서버를 여러 대로 복제할 수 있게 만듭니다.
-3. 로드밸런서 — 요청을 나누고 장애 서버를 우회합니다.
-4. 캐시 — 같은 조회가 DB까지 가지 않게 합니다.
-5. CDN — 정적 파일을 사용자 가까이에서 전달합니다.
-6. 읽기 복제본 — 읽기 부하를 분산합니다.
+1. DB 분리: 앱과 데이터 계층을 따로 키웁니다.
+2. 무상태 앱: 서버를 여러 대로 복제할 수 있게 만듭니다.
+3. 로드밸런서: 요청을 나누고 장애 서버를 우회합니다.
+4. 캐시: 같은 조회가 DB까지 가지 않게 합니다.
+5. CDN: 정적 파일을 사용자 가까이에서 전달합니다.
+6. 읽기 복제본: 읽기 부하를 분산합니다.
 
 ### 함정 체크
 
@@ -46,4 +46,4 @@
 ![Day 01 다이어그램](https://raw.githubusercontent.com/newinh/TIL/orca/sys-design/diagrams/day-01-scaling.png)
 
 - [전체 강의](https://github.com/newinh/TIL/blob/orca/sys-design/lessons/day-01-scaling.md)
-- [원문: Chapter 1 — Scale from Zero to Millions of Users](https://github.com/liquidslr/system-design-notes/tree/main/01.%20Scaling)
+- [원문: Chapter 1, Scale from Zero to Millions of Users](https://github.com/liquidslr/system-design-notes/tree/main/01.%20Scaling)
